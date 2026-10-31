@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="吴方舟，LLM / Agent 算法工程师。专注 Agent Runtime、策略后训练、证据检索与评测闭环。">
+  <meta property="og:title" content="吴方舟 | LLM / Agent 算法工程师">
+  <meta property="og:description" content="专注 Agent Runtime、策略后训练与证据驱动研究。">
+  <meta property="og:type" content="website">
+  <title>吴方舟 | LLM / Agent 算法工程师</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> INTERVIEW PORTFOLIO · 2026</p>
+          <h1 id="hero-title">吴方舟</h1>
+          <p class="hero-role">LLM / Agent 算法工程师</p>
+          <p class="hero-summary">近 7 年大模型与 NLP 算法经验。关注 Agent 如何可靠执行、从结果中学习，并在复杂研究任务中持续改进。</p>
+          <div class="hero-topics" aria-label="关注领域">
+            <a href="#runtime-project" data-filter-link="project">Agent Runtime</a>
+            <a href="#policy-training" data-filter-link="project">策略后训练</a>
+            <a href="#legal-deep-research" data-filter-link="project">证据驱动研究</a>
+          </div>
+          <div class="hero-links">
+            <a class="hero-link-primary" href="#timeline">探索时间轴 <span aria-hidden="true">↓</span></a>
+            <a class="hero-link-secondary" href="https://github.com/naomiwufzz/codex-taskboard" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⌘</span> GitHub</a>
+            <a class="hero-link-secondary" href="#runtime-project">项目成果 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-results" id="outcomes" aria-label="项目结果摘要">
+          <a class="result-item result-blue" href="#runtime-project">
+            <p class="result-label">LEGAL WORK AGENT · SUCCESS RATE</p>
+            <p class="result-number">48 <span>→</span> 78<small>%</small></p>
+            <p class="result-note">500 条隔离任务 · 6 轮迭代</p>
+          </a>
+          <a class="result-item result-green" href="#policy-training">
+            <p class="result-label">DEEP RESEARCH · POLICY</p>
+            <p class="result-number">61 <span>→</span> 72<small>%</small></p>
+            <p class="result-note">600 项独立测试集综合分</p>
+          </a>
+          <a class="result-item result-coral" href="#legal-deep-research">
+            <p class="result-label">LEGAL DEEP RESEARCH</p>
+            <p class="result-number">58 <span>→</span> 73<small>%</small></p>
+            <p class="result-note">90 项专项评测核心得分</p>
+          </a>
+          <a class="result-item result-ink" href="#runtime-project">
+            <p class="result-label">LONG-HORIZON CONTEXT</p>
+            <p class="result-number">10.9k <span>→</span> 5.3k</p>
+            <p class="result-note">200 组长程任务 · 输入 Token −51%</p>
+          </a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#timeline" aria-label="滚动查看成长时间轴"><span>SCROLL</span><b aria-hidden="true">⌄</b></a>
+    </section>
+
+    <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
+      <div class="section-shell">
+        <header class="section-heading">
+          <h2 id="timeline-title">成长时间轴</h2>
+          <p>从金融数学与 NLP，到法律场景下的 Agent 系统。</p>
+        </header>
+        <div class="timeline-filters" role="tablist" aria-label="筛选时间轴">
+          <button type="button" role="tab" id="filter-all" aria-controls="timeline-list" data-filter="all" aria-selected="true" tabindex="0"><span aria-hidden="true">✦</span> 全部</button>
+          <button type="button" role="tab" id="filter-education" aria-controls="timeline-list" data-filter="education" aria-selected="false" tabindex="-1"><span aria-hidden="true">🎓</span> 教育</button>
+          <button type="button" role="tab" id="filter-work" aria-controls="timeline-list" data-filter="work" aria-selected="false" tabindex="-1"><span aria-hidden="true">💼</span> 工作</button>
+          <button type="button" role="tab" id="filter-project" aria-controls="timeline-list" data-filter="project" aria-selected="false" tabindex="-1"><span aria-hidden="true">📄</span> Agent 项目</button>
+          <button type="button" role="tab" id="filter-opensource" aria-controls="timeline-list" data-filter="opensource" aria-selected="false" tabindex="-1"><span aria-hidden="true">⭐</span> 开源与荣誉</button>
+        </div>
+        <p class="filter-status" id="filter-status" aria-live="polite">显示全部经历</p>
+
+        <ol class="timeline-list" id="timeline-list">
+          <li class="timeline-item" data-kind="opensource">
+            <time datetime="2026-07">2026.07 — 2026.10</time>
+            <span class="timeline-marker marker-coral" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">开源教程 · 机制复刻</p>
+              <h3><a href="https://github.com/adongwanai/learn-workbuddy" target="_blank" rel="noopener noreferrer">learn-workbuddy <span aria-hidden="true">↗</span></a></h3>
+              <p class="timeline-summary">以 24 个渐进章节拆解 Working Agent Harness，结合 mini_workbuddy 梳理从模型决策到工具执行的完整链路。</p>
+            </article>
+          </li>
+          <li class="timeline-item" data-kind="opensource">
+            <time datetime="2026-07">2026.07 — 2026.09</time>
+            <span class="timeline-marker marker-blue" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">开源项目</p>
+              <h3><a href="https://github.com/naomiwufzz/codex-taskboard" target="_blank" rel="noopener noreferrer">Codex Taskboard <span aria-hidden="true">↗</span></a></h3>
+              <p class="timeline-summary">关联多 Session、任务与交付物，跟踪任务认领、执行验证和人工验收。</p>
+            </article>
+          </li>
+          <li class="timeline-item" data-kind="project" id="runtime-project">
+            <time datetime="2025-10">2025.10 — 2026.03</time>
+            <span class="timeline-marker marker-blue" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">系统项目 · 核心成员</p>
+              <h3>法律工作 Agent Runtime 与 Skill 自进化</h3>
+              <p class="timeline-summary">为美国律所与企业法务的长程、多工具任务建设统一 Runtime，让执行轨迹进入失败归因、Skill 提案、沙箱回归与版本门控。</p>
+              <details class="entry-details">
+                <summary>展开项目细节</summary>
+                <ul>
+                  <li><strong>Memory / Context：</strong>设计四类记忆与 Write、Select、Compress、Isolate 流程；200 组长程任务中，输入 Context Token 由 10.9k 降至 5.3k。</li>
+                  <li><strong>工具编排：</strong>实现 Dispatch Table、Batch Tool Calling 与 Interrupt；120 任务 × 3 轮评测中，多工具交互轮次下降 45%，端到端耗时下降 38%。</li>
+                  <li><strong>Skill 自进化：</strong>以 500 条隔离任务作为门控集，经 6 轮迭代，任务成功率由 48% 提升至 78%；自动归因覆盖率 83%，候选 Skill 回归通过率 65%。</li>
+                  <li><strong>安全治理：</strong>加入沙箱、分级权限、Dry-run、副作用预览与 Human-in-the-loop 审批。</li>
+                </ul>
+              </details>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="project" id="policy-training">
+            <time datetime="2025-01">2025.01 — 2025.12</time>
+            <span class="timeline-marker marker-green" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">模型项目 · 方案与迭代主导</p>
+              <h3>Deep Research Agent 策略后训练</h3>
+              <p class="timeline-summary">围绕法律长链路研究中的停止、检索与证据压缩决策，构建轨迹数据、偏好优化、分阶段 Agentic RL 和隔离评测流程。</p>
+              <details class="entry-details">
+                <summary>展开项目细节</summary>
+                <ul>
+                  <li><strong>训练对象：</strong>基于 Qwen3-30B-A3B；约 12 万条 SFT 数据、4.8 万组偏好对，覆盖 Planner、Researcher、Compaction 与 Reporter 等关键节点。</li>
+                  <li><strong>训练阶段：</strong>CPT、SFT / DPO、GSPO / OPD、Reward / Judge；从短上下文节点训练衔接至最长 64k 的完整轨迹优化。</li>
+                  <li><strong>评测结果：</strong>600 项独立测试集上研究综合分由 61% 提升至 72%；LLM-as-Judge 与专家一致性由 60% 提升至 78%。</li>
+                  <li><strong>质量约束：</strong>引用重复率由 22% 降至 9%，未引用主张比例由 13% 降至 1%。</li>
+                </ul>
+              </details>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="work">
+            <time datetime="2023-01">2023.01 — 2026.03</time>
+            <span class="timeline-marker marker-ink" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">工作经历</p>
+              <h3>律商联讯信息技术有限公司</h3>
+              <p class="timeline-summary">LLM 大模型算法工程师 · 法律工作 Agent、Deep Research 与 Agent Policy。</p>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="project" id="legal-deep-research">
+            <time datetime="2023-02">2023.02 — 2025.03</time>
+            <span class="timeline-marker marker-coral" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">应用项目 · 核心成员</p>
+              <h3>Legal Deep Research Agent</h3>
+              <p class="timeline-summary">把律师的开放式研究问题转化为动态检索、证据核验和明确研究边界的研究报告。</p>
+              <details class="entry-details">
+                <summary>展开项目细节</summary>
+                <ul>
+                  <li><strong>研究控制：</strong>Global Controller + Workstream Research Loop，使用 Coverage Map、Workstream Ledger 与 Dynamic Replanning 管理覆盖、缺口和预算。</li>
+                  <li><strong>多跳检索：</strong>结合 GraphRAG、引用关系与效力信号，固定评测集检索 F1 由 0.67 提升至 0.82。</li>
+                  <li><strong>证据校验：</strong>Verifier 与 Citation Verifier 支持补研、改写、弱化、删除和不确定性披露。</li>
+                  <li><strong>专项评测：</strong>90 项评测的核心评分要点通过率由 58% 提升至 73%；首轮修复率 64%，幻觉率降低 36%。</li>
+                </ul>
+              </details>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="project">
+            <time datetime="2021-03">2021.03 — 2022.12</time>
+            <span class="timeline-marker marker-blue" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">NLP 项目 · 负责人</p>
+              <h3>大规模文本纠错系统</h3>
+              <p class="timeline-summary">覆盖 25 类审核校对能力，建设伪数据、分阶段 SFT 与检测—召回—排序—过滤链路，推动模型进入产品交付。</p>
+              <p class="timeline-result">句子级 F1：76% <span>→</span> 91%</p>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="opensource">
+            <time datetime="2021">2021</time>
+            <span class="timeline-marker marker-ink" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">竞赛荣誉</p>
+              <h3><a href="https://github.com/destwang/CTC2021" target="_blank" rel="noopener noreferrer">第三届中国 AI+ 创新创业大赛 · 中文文本纠错 <span aria-hidden="true">↗</span></a></h3>
+              <p class="timeline-summary">带领团队获得三等奖。</p>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="project">
+            <time datetime="2020-06">2020.06 — 2021.03</time>
+            <span class="timeline-marker marker-green" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">NLP 项目</p>
+              <h3>小样本突发事件抽取</h3>
+              <p class="timeline-summary">覆盖 5 大类、20 个子类事件；结合 MRC+QA 条件抽取、Prompt-based UIE 冷启动与 TinyBERT / ONNX 推理优化。</p>
+              <p class="timeline-result">事件发现 F1：78% <span>→</span> 92% · 推理速度提升 6 倍</p>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="work">
+            <time datetime="2019-06">2019.06 — 2022.12</time>
+            <span class="timeline-marker marker-coral" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">工作经历</p>
+              <h3>上海蜜度信息有限公司 · 新浪微热点研究院</h3>
+              <p class="timeline-summary">自然语言处理算法工程师，负责事件抽取、文本纠错等 NLP 系统研发与交付。</p>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="work">
+            <time datetime="2018-04">2018.04 — 2018.12</time>
+            <span class="timeline-marker marker-ink" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">工作经历</p>
+              <h3>唐山银行</h3>
+              <p class="timeline-summary">管理培训生 · 量化部门 NLP 算法。</p>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="education">
+            <time datetime="2016-07">2016.07 — 2017.11</time>
+            <span class="timeline-marker marker-blue" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">硕士 · Merit</p>
+              <h3>帝国理工学院</h3>
+              <p class="timeline-summary">风险管理与金融工程理学硕士 · GPA 3.6 / 4.0。</p>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-kind="education">
+            <time datetime="2012-09">2012.09 — 2016.06</time>
+            <span class="timeline-marker marker-green" aria-hidden="true"></span>
+            <article class="timeline-entry">
+              <p class="timeline-type">本科 · First Class Honours</p>
+              <h3>西交利物浦大学 / 利物浦大学</h3>
+              <p class="timeline-summary">金融数学理学学士 · GPA 3.8 / 4.0。</p>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <section class="toolkit-section" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading-centered">
+          <p class="section-kicker">SELECTED TOOLKIT</p>
+          <h2 id="toolkit-title">技术栈</h2>
+        </header>
+        <div class="toolkit-grid">
+          <article class="toolkit-item">
+            <span class="toolkit-index">01</span>
+            <h3>Agent & Harness</h3>
+            <p>Agent Loop · ReAct · Plan-and-Execute · Tool Use · Multi-Agent · RAG · Agent 评测</p>
+          </article>
+          <article class="toolkit-item">
+            <span class="toolkit-index toolkit-green">02</span>
+            <h3>Post-training</h3>
+            <p>SFT · DPO · GRPO · GSPO · OPD · Reward Design · 数据合成</p>
+          </article>
+          <article class="toolkit-item">
+            <span class="toolkit-index toolkit-coral">03</span>
+            <h3>Memory & Evidence</h3>
+            <p>Episodic / Semantic Memory · Context Compression · Evidence State</p>
+          </article>
+          <article class="toolkit-item">
+            <span class="toolkit-index toolkit-ink">04</span>
+            <h3>Engineering</h3>
+            <p>PyTorch · verl · DeepSpeed · LLaMA-Factory · Codex · Claude · Cursor</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-shell contact-inner">
+        <div>
+          <p class="section-kicker">LET'S CONNECT</p>
+          <h2 id="contact-title">让复杂任务<br>变得更可靠。</h2>
+        </div>
+        <div class="contact-actions">
+          <p>欢迎交流 Agent Runtime、策略学习与证据密集型研究系统。</p>
+          <a class="contact-email" href="mailto:naomiwufzz@163.com">naomiwufzz@163.com <span aria-hidden="true">↗</span></a>
+          <a class="contact-github" href="https://github.com/naomiwufzz" target="_blank" rel="noopener noreferrer">github.com/naomiwufzz <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner"><span>吴方舟 · LLM / Agent 算法工程师</span><a href="#top">回到顶部 ↑</a><span>© 2026</span></div>
+  </footer>
+  <dialog class="entry-dialog" id="entry-dialog" aria-labelledby="entry-dialog-title" aria-describedby="entry-dialog-date">
+    <div class="entry-dialog-panel">
+      <header class="entry-dialog-header">
+        <div>
+          <p class="entry-dialog-type" id="entry-dialog-type"></p>
+          <h2 id="entry-dialog-title"></h2>
+          <p class="entry-dialog-date" id="entry-dialog-date"></p>
+        </div>
+        <button class="entry-dialog-close" type="button" aria-label="关闭详情面板">×</button>
+      </header>
+      <div class="entry-dialog-content" id="entry-dialog-content"></div>
+    </div>
+  </dialog>
+</body>
+</html>
