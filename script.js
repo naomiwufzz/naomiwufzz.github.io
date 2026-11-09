@@ -9,10 +9,10 @@
   const dialogContent = document.querySelector("#entry-dialog-content");
   const dialogClose = dialog.querySelector(".entry-dialog-close");
   const labels = {
-    education: "教育经历",
-    work: "工作经历",
-    project: "项目经历",
-    opensource: "开源与荣誉",
+    agent: "Agent 系统项目",
+    posttraining: "策略后训练项目",
+    research: "深度研究项目",
+    opensource: "开源项目",
   };
 
   let lastTrigger = null;
@@ -30,7 +30,7 @@
       item.hidden = !show;
       if (show) visible += 1;
     });
-    status.textContent = filter === "all" ? `显示全部 ${visible} 条经历` : `显示 ${visible} 条${labels[filter]}`;
+    status.textContent = filter === "all" ? `显示全部 ${visible} 个项目` : `显示 ${visible} 个${labels[filter]}`;
   };
 
   buttons.forEach((button) => {
@@ -89,7 +89,7 @@
   dialog.addEventListener("close", () => lastTrigger?.focus());
 
   if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    const revealItems = document.querySelectorAll(".section-heading, .timeline-item, .toolkit-item, .contact-inner");
+    const revealItems = document.querySelectorAll(".section-heading, .timeline-item, .spotlight-inner, .education-card, .evidence-card, .architecture-card, .material-card, .contact-inner");
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
